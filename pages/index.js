@@ -1,9 +1,20 @@
-import BirthdayRemainder from "../components/birthday-remainder";
+import Link from "next/link";
+
+const ui = [
+	{ id: 1, link: "birthday-remainder", name: "Birthday Remainder" },
+	{ id: 2, link: "tours", name: "tours" },
+];
 
 export default function Home() {
 	return (
 		<>
-			<BirthdayRemainder />
+			<div className="home-container">
+				{ui.map((item) => (
+					<Link href={item.link} key={item.id}>
+						<a>{item.name}</a>
+					</Link>
+				))}
+			</div>
 		</>
 	);
 }

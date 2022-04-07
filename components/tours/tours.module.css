@@ -1,0 +1,59 @@
+.section {
+}
+
+.section > h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	text-align: center;
+	margin: 1rem;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.5rem;
+	margin: 2rem 0;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	width: 70%;
+	margin-inline: auto;
+}
+
+.image {
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+}
+
+.card > div {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+	font-weight: 500;
+}
+
+.card > p {
+	padding: 0.5rem 1rem;
+	padding-top: 0;
+	color: gray;
+}
+
+.card > p > button {
+	color: blue;
+	padding-left: 0.3rem;
+	font-size: 0.92rem;
+}
+
+.card > button {
+	border: 1px solid red;
+	width: fit-content;
+	margin: 0.7rem auto;
+	padding: 0.4rem 0.7rem;
+	border-radius: 0.3rem;
+	color: red;
+}
+
+@media (min-width: 600px) {
+	.card {
+		width: 400px;
+	}
+}

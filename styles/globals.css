@@ -3,9 +3,17 @@ html {
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body {
+.home-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #f28ab2;
+}
+
+a {
+	background: #000000;
+	padding: 0.7rem 1.5rem;
+	color: #ffffff;
+	margin: 1rem;
+	font-weight: 500;
+	border-radius: 0.4rem;
 }
