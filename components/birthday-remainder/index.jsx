@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./index.module.css";
 import data from "./data";
 
-function Index() {
+function BirthdayRemainder() {
 	const [people, setPeople] = useState(data);
 	return (
 		<section className={styles.birthday_wrapper}>
@@ -34,4 +34,4 @@ function Index() {
 	);
 }
 
-export default Index;
+export default BirthdayRemainder;

@@ -2,7 +2,8 @@ import Link from "next/link";
 
 const ui = [
 	{ id: 1, link: "birthday-remainder", name: "Birthday Remainder" },
-	{ id: 2, link: "tours", name: "tours" },
+	{ id: 2, link: "tours", name: "Tours" },
+	{ id: 3, link: "reviews", name: "Reviews" },
 ];
 
 export default function Home() {
