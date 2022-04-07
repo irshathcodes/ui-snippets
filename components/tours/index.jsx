@@ -3,13 +3,13 @@ import styles from "./tours.module.css";
 import Image from "next/image";
 
 export default function Tours({ data }) {
-	const [showMore, setShowMore] = useState(false);
 	const [tours, setTours] = useState(data);
+	const [showMore, setShowMore] = useState(Array(tours.length).fill(false));
 
 	return (
 		<section className={styles.section}>
 			<h2>Our Tours</h2>
-			{tours.map(({ id, name, info, image, price }) => {
+			{tours.map(({ id, name, info, image, price }, index) => {
 				return (
 					<div key={id} className={styles.card}>
 						<Image
@@ -23,9 +23,15 @@ export default function Tours({ data }) {
 							<h4>${price}</h4>
 						</div>
 						<p>
-							{showMore ? info : info.substring(0, 200) + "..."}
-							<button onClick={() => setShowMore(!showMore)}>
-								{showMore ? "Show less" : "show More"}
+							{showMore[index] ? info : info.substring(0, 200) + "..."}
+							<button
+								onClick={() =>
+									setShowMore(
+										showMore.map((item, i) => (i === index ? !item : item))
+									)
+								}
+							>
+								{showMore[index] ? "Show less" : "show More"}
 							</button>
 						</p>
 						<button
