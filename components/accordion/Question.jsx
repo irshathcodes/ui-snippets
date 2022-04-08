@@ -7,9 +7,9 @@ function Question({ title, info }) {
 	return (
 		<>
 			<div className={styles.question}>
-				<div>
+				<div onClick={() => setShowQuestion(!showQuestion)}>
 					<h3>{title}</h3>
-					<button onClick={() => setShowQuestion(!showQuestion)}>
+					<button>
 						{showQuestion ? (
 							<MinusIcon className={styles.icon} />
 						) : (
