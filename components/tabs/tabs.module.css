@@ -1,0 +1,105 @@
+.main > h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 0.2rem;
+}
+
+.underline {
+	padding: 0.16rem 3rem;
+	width: fit-content;
+	background-color: #2caeba;
+	margin-inline: auto;
+	margin-bottom: 2rem;
+}
+
+.flex_container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	width: 95%;
+	margin: 3rem auto;
+}
+
+.btn_container {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.btn_container > button {
+	margin-top: 0.5rem;
+	margin-bottom: 2rem;
+	font-size: 1.1rem;
+}
+
+.active_btn {
+	color: #2caeba;
+	font-weight: 500;
+	box-shadow: 0 2px #2caeba;
+}
+
+.title {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.company {
+	font-size: 0.9rem;
+	margin-top: 0.3rem;
+	margin-bottom: 0.5rem;
+	background-color: #dae2ec;
+	width: fit-content;
+	padding: 0.1rem 0.3rem;
+	border-radius: 0.1rem;
+	font-weight: 500;
+}
+
+.dates {
+	color: gray;
+}
+
+.duties {
+	margin: 1rem 0;
+}
+
+.duties > li {
+	margin-bottom: 1.3rem;
+}
+
+.icon {
+	width: 1rem;
+	height: 1rem;
+	display: inline-block;
+	color: #2caeba;
+}
+
+.more_info_btn {
+	background: #2caeba;
+	padding: 0.5rem 1rem;
+	color: #fff;
+	border-radius: 0.2rem;
+	font-weight: 500;
+	margin: 0.5rem 0;
+}
+
+.more_info_btn:hover {
+	background: rgb(44, 174, 186, 90%);
+}
+
+@media (min-width: 750px) {
+	.flex_container {
+		flex-direction: row;
+		width: 70%;
+		gap: 3rem;
+	}
+	.btn_container {
+		display: block;
+	}
+	.active_btn {
+		box-shadow: -2px 0 #2caeba;
+		padding-left: 1rem;
+	}
+}

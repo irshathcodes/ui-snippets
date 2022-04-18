@@ -5,6 +5,8 @@ const ui = [
 	{ id: 2, link: "tours", name: "Tours" },
 	{ id: 3, link: "reviews", name: "Reviews" },
 	{ id: 4, link: "accordion", name: "Accordion" },
+	{ id: 5, link: "menu", name: "Menu" },
+	{ id: 6, link: "tabs", name: "Tabs" },
 ];
 
 export default function Home() {

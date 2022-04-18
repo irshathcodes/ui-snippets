@@ -1,0 +1,54 @@
+.main > h1 {
+	text-align: center;
+	margin: 1rem 0;
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+.categories {
+	margin: 1.5rem 0;
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+}
+
+.categories > button {
+	text-transform: capitalize;
+	font-weight: 500;
+}
+
+.product {
+	position: relative;
+	width: 300px;
+	height: 380px;
+	margin: 2rem auto;
+	border: 1px solid rgb(209 213 219);
+	border-radius: 0.5rem;
+	box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.image {
+	object-fit: cover;
+	object-position: bottom;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+}
+
+.product > div {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1rem;
+	background-color: #fff;
+	font-weight: 500;
+}
+
+@media (min-width: 650px) {
+	.product {
+		width: 350;
+		height: 400px;
+	}
+}
