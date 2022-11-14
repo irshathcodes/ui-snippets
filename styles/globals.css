@@ -4,17 +4,30 @@ html {
 }
 
 .home-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+	max-width: 800px;
+	margin: 4rem auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	gap: 2rem;
+	padding: 2rem;
 }
 
-a {
-	background: #000000;
-	padding: 0.7rem 1.5rem;
-	color: #ffffff;
-	margin: 1rem;
+.links {
+	border: 1px solid rgb(128, 128, 128, 20%);
+	padding: 2rem;
+	text-align: center;
 	font-weight: 500;
-	border-radius: 0.4rem;
+	border-radius: 20px;
+	font-size: 1.5rem;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	transition: transform 300ms ease;
+	color: rgb(85, 85, 85);
+}
+
+.links:hover {
+	transform: scale(1.1);
+}
+
+.links:active {
+	transform: scale(0.9);
 }
