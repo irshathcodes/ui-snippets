@@ -31,3 +31,7 @@ html {
 .links:active {
 	transform: scale(0.9);
 }
+
+button {
+	border: none;
+}

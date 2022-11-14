@@ -28,7 +28,9 @@ function BirthdayRemainder() {
 					))}
 				</div>
 
-				<button onClick={() => setPeople([])}>Clear All</button>
+				<button type="button" onClick={() => setPeople([])}>
+					Clear All
+				</button>
 			</div>
 		</section>
 	);

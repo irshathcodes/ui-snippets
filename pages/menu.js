@@ -8,12 +8,12 @@ export default Index;
 
 export async function getStaticProps() {
 	const res = await fetch(
-		"https://ecommercenode-api.herokuapp.com/api/v1/products/get/categories"
+		"https://ecommerce-api.up.railway.app/api/v1/products/get/categories"
 	);
 	const categories = await res.json();
 
 	const data = await fetch(
-		"https://ecommercenode-api.herokuapp.com/api/v1/products"
+		"https://ecommerce-api.up.railway.app/api/v1/products"
 	);
 
 	const products = await data.json();
