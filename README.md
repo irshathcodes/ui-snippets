@@ -1,3 +1,3 @@
 ## Ui Snippets
 
-just a bunch of react ui components created to learn react.
+just a bunch of ui components created to learn react.
